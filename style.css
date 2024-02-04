@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Orbitron&display=swap');
 body {
     font-family: "Nunito", sans-serif;
     margin: 0px;
@@ -8,7 +10,7 @@ body {
 
 nav {
     margin-top: 10px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     height: 80px;
     display: flex;
     /* border: 2px solid black ; */
@@ -24,7 +26,15 @@ nav {
     margin: 10px;
     margin-left: 50px;
     height: 40px;
+    transition: all 1s ease-in-out;
     width: 40px;
+}
+#logo >img{
+    width: 50px;
+    filter: drop-shadow(6px 5px 3px #2b2a2a );
+}
+#logo:hover{
+    rotate: 360deg;
 }
 
 #navtext {
@@ -35,6 +45,9 @@ nav {
 }
 .text{
     display: flex;
+    height: 20px;
+    align-items: center;
+    transition: 0.2s all ease-in-out;
 }
 .text>p {
     display: flex;
@@ -86,15 +99,18 @@ nav {
 h1{
     font-weight: bold;
     font-family: 'poppins', sans-serif;
+    /* animation: animate 5s linear infinite; */
+    /* transition-duration: 6s ; */
 }
 .design:hover{
     /* font-weight: bolder; */
     color: #2723f9;
     text-shadow: 0 2px 1px black;
+    transform: translateY(5px);
 }
 .align, .build, .design{
     font-weight: bolder;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 .align:hover{
     color: rgb(191, 2, 191);
@@ -187,7 +203,7 @@ h1{
 }
 
 #heading-2>h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-shadow: 8px 2px white;
 }
 
@@ -331,7 +347,7 @@ h1{
 }
 
 #heading-4>h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-shadow: 10px 4px 2px black;
 }
 
@@ -402,7 +418,7 @@ h1{
 }
 
 #heading-5>h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-shadow: 10px 5px black;
 }
 
@@ -471,7 +487,7 @@ h1{
 }
 
 #heading-6>h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-shadow: 5px 5px rgb(0, 183, 255);
 }
 
@@ -551,7 +567,7 @@ footer {
 }
 
 #footer-text>p {
-    font-size: 4.5rem;
+    font-size: 4rem;
     margin: 0px 100px;
     font-family: 'poppins', sans-serif;
 }
@@ -619,7 +635,7 @@ footer {
 
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
     .text>p {
         display: none;
     }
@@ -756,7 +772,7 @@ footer {
     /* footer ends here!  */
 }
 
-@media (min-width: 1300px) and (max-width: 1500px) {
+@media (min-width: 1200px) and (max-width: 1500px) {
     /* .text>ul {
         display: none;
     }
